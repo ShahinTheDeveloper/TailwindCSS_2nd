@@ -4,8 +4,173 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Tangerine"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
         <link rel="stylesheet" href="./dist/app.css" />
         <title>TailwindCSS 2nd Project</title>
     </head>
-    <body></body>
+    <body class="antialiased bg-body text-body font-body">
+        <header
+            id="Header"
+            class="bg-[url('/src/img/hero-image.jpg')] w-full h-full bg-no-repeat bg-cover bg-center bg-blend-overlay bg-black bg-opacity-40 flex justify-center"
+        >
+            <div class="container">
+                <div
+                    class="navBarTop flex justify-between item-center py-5 border-b border-white border-opacity-25"
+                >
+                    <div class="navBarTop-left">
+                        <ul class="flex justify-start">
+                            <li class="flex justify-start pr-5">
+                                <img
+                                    src="/src/img/icon/map-pin.svg"
+                                    alt=""
+                                    class="h-4 w-4"
+                                />
+                                <p
+                                    class="font-normal font-Archivo text-white opacity-75 px-4"
+                                >
+                                    Madiun City East Java
+                                </p>
+                            </li>
+                            <li class="flex justify-start px-5">
+                                <img
+                                    src="/src/img/icon/phone.svg"
+                                    alt=""
+                                    class="h-4 w-4"
+                                />
+                                <p
+                                    class="font-normal font-Archivo text-white opacity-75 px-4"
+                                >
+                                    <a href="tel:+62123456789"
+                                        >+62 123 456 789</a
+                                    >
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navBarTop-right">
+                        <ul class="flex space-x-2">
+                            <li class="h-4 w-4">
+                                <img src="./src/img/icon/facebook.svg" alt="" />
+                            </li>
+                            <li class="h-4 w-4">
+                                <img
+                                    src="./src/img/icon/instagram.svg"
+                                    alt=""
+                                />
+                            </li>
+                            <li class="h-4 w-4">
+                                <img src="./src/img/icon/tiktok.svg" alt="" />
+                            </li>
+                            <li class="h-4 w-4">
+                                <img src="./src/img/icon/linkedin.svg" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navBarBottom">
+                    <nav class="flex justify-between">
+                        <div class="brand flex items-center">
+                            <h1 class="text-white font-bold text-5xl">
+                                <span class="text-red-300">Wab</span>pa
+                            </h1>
+                        </div>
+                        <div class="Menus flex items-center">
+                            <ul
+                                class="flex space-x-6 uppercase font-semibold text-xl"
+                            >
+                                <li
+                                    class="text-white opacity-75 hover:opacity-100"
+                                >
+                                    <a href="/index.html">Home</a>
+                                </li>
+                                <li
+                                    class="text-white opacity-75 hover:opacity-100"
+                                >
+                                    <a href="/">About Us</a>
+                                </li>
+                                <li
+                                    class="text-white opacity-75 hover:opacity-100"
+                                >
+                                    <a href="/"
+                                        >Our Service
+                                        <i
+                                            class="fa-solid fa-caret-down pl-2"
+                                            style="color: #ffffff"
+                                        ></i
+                                    ></a>
+                                </li>
+                                <li
+                                    class="text-white opacity-75 hover:opacity-100"
+                                >
+                                    <a href="/"
+                                        >Pages
+                                        <i
+                                            class="fa-solid fa-caret-down pl-2"
+                                            style="color: #ffffff"
+                                        ></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="t-button flex items-center">
+                            <button
+                                class="py-3.5 px-8 bg-purple-600 uppercase font-semibold text-white rounded-md"
+                            >
+                                Get Quotation
+                            </button>
+                            <i
+                                class="fa-sharp fa-solid fa-bars fa-xl pl-6"
+                                style="color: #ffffff"
+                            ></i>
+                        </div>
+                    </nav>
+                </div>
+                <div
+                    class="hero-content flex flex-col justify-start w-1/2 mt-10 mb-20"
+                >
+                    <h2 class="font-bold font-Oswald text text-6xl text-white">
+                        Welcome to our Website Agency Landing Page
+                    </h2>
+                    <p
+                        class="font-Archivo text-white opacity-75 tracking-wider my-10"
+                    >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                    <div>
+                        <button
+                            class="py-2.5 px-4 text-white uppercase font-bold bg-purple-600 hover:bg-purple-700 border-2 border-purple-600 hover:border-purple-700"
+                        >
+                            Our Services
+                        </button>
+                        <button
+                            class="py-2.5 px-4 text-white uppercase font-bold border-2 border-white hover:border-purple-700 hover:bg-purple-700 hover:bg-opacity-25"
+                        >
+                            See Projects
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="about-us">
+            <div class="container mx-auto flex space-x-2">
+                <div class="about-us-left">
+                    <img
+                        src="./src/img/hero-image.jpg"
+                        alt=""
+                        class="aspect-square"
+                    />
+                </div>
+                <div class="about-us-right"></div>
+            </div>
+        </section>
+    </body>
 </html>
